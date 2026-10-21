@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SaveHop privacy policy</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <a href="./"><img class="icon" src="icon.png" alt="SaveHop home"></a>
+  <h1>SaveHop privacy policy</h1>
+  <p class="meta">Last updated 21 October 2026</p>
+
+  <p>SaveHop is a Windows program that copies game saves between your devices through cloud storage you choose. This page explains what it does with your data, including data from your Google account if you choose Google Drive.</p>
+
+  <h2>No SaveHop servers</h2>
+  <p>SaveHop has no servers and no accounts. Nothing it handles is sent to the people who make SaveHop, and it doesn't collect analytics or usage data.</p>
+
+  <h2>What SaveHop keeps in your cloud storage</h2>
+  <p>In one folder of the storage you connect, named SaveHop unless you choose another name, SaveHop keeps:</p>
+  <ul>
+    <li>the save files of the games you add, packed into zip files, including any registry entries a game saves to. It keeps the last 10 versions of each game's saves, plus a copy of any save you didn't pick when two devices' saves disagreed.</li>
+    <li>where each game keeps its saves.</li>
+    <li>which save is the newest, and the name of the device that made each one. You choose each device's name.</li>
+  </ul>
+
+  <h2>Google Drive</h2>
+  <p>When you connect Google Drive, SaveHop asks Google for one permission: to see, create, change and delete only the Drive files SaveHop created (the <code>drive.file</code> scope). It can't see any other files in your Drive.</p>
+  <p>SaveHop uses this access only to upload, download, list and delete the files described above, on your devices. It doesn't send Google user data to anyone else, use it for advertising, or use it to train AI models.</p>
+  <p>SaveHop's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>What stays on your devices</h2>
+  <ul>
+    <li>The sign-in for your storage is saved on your PC in <code>%APPDATA%\SaveHop\cloud.conf</code>, and in a file called <code>SaveHop.key</code> in each game folder you add, so your other devices can sync that game. Anyone with a copy of these files can reach SaveHop's files in your storage, so don't share them.</li>
+    <li>Your settings, list of games, logs and the last 5 local backups of each game's saves are kept in <code>%APPDATA%\SaveHop</code>.</li>
+  </ul>
+
+  <h2>Other connections</h2>
+  <p>Once a week SaveHop downloads the <a href="https://github.com/mtkennerly/ludusavi-manifest">Ludusavi manifest</a>, a public list of where games keep their saves, from GitHub. If you run SaveHop's connection test, it checks your internet access by contacting a Google server. Neither sends anything about you or your games.</p>
+
+  <h2>Removing your data</h2>
+  <ul>
+    <li>Delete the SaveHop folder from your cloud storage.</li>
+    <li>To remove SaveHop's access to Google Drive, go to <a href="https://myaccount.google.com/connections">your Google Account's third-party connections</a>.</li>
+    <li>Uninstalling SaveHop leaves <code>%APPDATA%\SaveHop</code> and the <code>SaveHop.key</code> files in place, so delete them yourself if you want them gone.</li>
+  </ul>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, this page will show the new version and its date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="https://github.com/gabew100/savehop-site/issues">open an issue on GitHub</a>.</p>
+
+  <footer><a href="./">SaveHop home</a></footer>
+</main>
+</body>
+</html>

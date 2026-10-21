@@ -1,0 +1,47 @@
+/* Same colors and type as the SaveHop app's window. */
+:root {
+  color-scheme: light dark;
+  --bg: #f3f3f3;
+  --text: #1b1b1b;
+  --text-2: #5d5d5d;
+  --link: #005fb8;
+  --rule: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #202020;
+    --text: #ffffff;
+    --text-2: #cfcfcf;
+    --link: #60cdff;
+    --rule: #3a3a3a;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+}
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+}
+h1, h2 {
+  font-family: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+}
+h1 { font-size: 2rem; margin: 16px 0 8px; }
+h2 { font-size: 1.25rem; margin: 40px 0 8px; }
+a { color: var(--link); }
+.icon { display: block; width: 72px; height: 72px; }
+.lead { font-size: 1.125rem; }
+.meta { color: var(--text-2); }
+code { font-family: Consolas, ui-monospace, monospace; font-size: 0.9em; overflow-wrap: anywhere; }
+footer {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  color: var(--text-2);
+}
